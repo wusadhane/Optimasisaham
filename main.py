@@ -16,5 +16,5 @@ st.write('Tanggal Awal:', d)
 
 d = st.date_input(
     "When\'s your birthday",
-    datetime.now(), key="end")
+    datetime.date(2023, 1, 1), key="end")
 st.write('Tanggal Akhir:', d)
