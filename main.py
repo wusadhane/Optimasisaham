@@ -1,4 +1,3 @@
-from pypfopt.discrete_allocation import DiscreteAllocation, get_latest_prices
 from pypfopt import EfficientFrontier
 from pypfopt import risk_models
 from pypfopt import expected_returns
