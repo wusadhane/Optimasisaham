@@ -6,4 +6,4 @@ st.title("Optimasi Portofolio Saham")
 
 st.markdown(
     "Index Harga Saham Gabungan Sektor Transportasi Laut")
-st.number_input("Masukan Dana Anda", key="name")
+st.number_input("Masukan Dana Anda", key="dana")
