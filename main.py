@@ -12,9 +12,9 @@ st.number_input("Masukan Dana Anda", key="dana")
 s = st.date_input(
     "Tanggal Awal",
     datetime.date(2022, 1, 1), key="start")
-st.write('Tanggal Awal:', d)
+st.write('Tanggal Awal:', s)
 
 e = st.date_input(
     "Tanggal Akhir",
     datetime.date(2023, 1, 1), key="end")
-st.write('Tanggal Akhir:', d)
+st.write('Tanggal Akhir:', e)
