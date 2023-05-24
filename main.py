@@ -9,12 +9,12 @@ st.markdown(
 
 st.number_input("Masukan Dana Anda", key="dana")
 
-d = st.date_input(
+s = st.date_input(
     "Tanggal Awal",
     datetime.date(2022, 1, 1), key="start")
 st.write('Tanggal Awal:', d)
 
-d = st.date_input(
+e = st.date_input(
     "Tanggal Akhir",
     datetime.date(2023, 1, 1), key="end")
 st.write('Tanggal Akhir:', d)
