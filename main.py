@@ -9,13 +9,10 @@ st.markdown(
 
 st.number_input("Masukan Dana Anda", key="dana")
 
-s = st.date_input(
-    "Tanggal Awal",
+d = st.date_input(
+    "Tanggal Awal Optimasi",
     datetime.date(2022, 1, 1), key="start")
-st.write('Tanggal Awal:', s)
-e = st.date_input(
-    "Tanggal Akhir",
-    datetime.date(2023, 1, 1), key="end")
-st.write('Tanggal Akhir:', e)
+st.write('Tanggal Awal:', d)
+
 
 st.button(label="Proses", key="Proses",on_click=None)
