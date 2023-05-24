@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-import yfinance as yf
+
 
 
 start_date = "2023-01-01"
