@@ -16,6 +16,11 @@ import yfinance as yf
 import datetime
 yf.pdr_override()
 
+st.title("Optimasi Portofolio Saham")
+
+st.markdown(
+    "Index Harga Saham Gabungan Sektor Transportasi Laut")
+
 start_date = "2023-01-01"
 end_date = "2023-05-01"
 tickers = ['BBRM.JK','BESS.JK','BSML.JK','BULL.JK', 'CANI.JK', 'HAIS.JK','HITS.JK','IPCC.JK', 'MITI.JK', 'NELY.JK', "PSSI.JK", "RIGS.JK", "SHIP.JK", "SMDR.JK", "SOCI.JK", "TCPI.JK", "TMAS.JK", "TPMA.JK", "WINS.JK" ]
