@@ -1,8 +1,5 @@
 import numpy as np
 import pandas as pd
-from pandas_datareader import data as pdr
-import plotly.express as px
-import matplotlib.pyplot as plt
 import seaborn as sns
 import yfinance as yf
 import datetime
