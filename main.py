@@ -1,9 +1,7 @@
 import numpy as np
 import pandas as pd
-import seaborn as sns
 import yfinance as yf
-import datetime
-yf.pdr_override()
+
 
 start_date = "2023-01-01"
 end_date = "2023-05-01"
