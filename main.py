@@ -9,12 +9,7 @@ st.markdown(
 
 st.number_input("Masukan Dana Anda", key="dana")
 
-start = st.date_input(
+d = st.date_input(
     "When\'s your birthday",
-    datetime.date(2022, 1, 1))
-st.write('Tanggal mulai:', start)
-
-end = st.date_input(
-    "When\'s your birthday",
-    datetime.now())
-st.write('Tanggal akhir:', end)
+    datetime.date(2019, 7, 6))
+st.write('Your birthday is:', d)
