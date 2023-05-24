@@ -18,4 +18,4 @@ e = st.date_input(
     datetime.date(2023, 1, 1), key="end")
 st.write('Tanggal Akhir:', e)
 
-st.button(label="Proses", type"Proses",on_click=None)
+st.button(label="Proses", key="Proses",on_click=None)
