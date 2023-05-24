@@ -11,5 +11,10 @@ st.number_input("Masukan Dana Anda", key="dana")
 
 d = st.date_input(
     "When\'s your birthday",
-    datetime.date(2019, 7, 6))
-st.write('Your birthday is:', d)
+    datetime.date(2022, 1, 1), key="start")
+st.write('Tanggal Awal:', d)
+
+d = st.date_input(
+    "When\'s your birthday",
+    datetime.now(), key="end")
+st.write('Tanggal Akhir:', d)
