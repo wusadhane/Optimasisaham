@@ -1,7 +1,19 @@
+from pandas_datareader.data import DataReader
+from pypfopt.discrete_allocation import DiscreteAllocation, get_latest_prices
+from pypfopt import EfficientFrontier
+from pypfopt import risk_models
+from pypfopt import expected_returns
+from pypfopt import plotting
+import copy
 import numpy as np
 import pandas as pd
-
-
+from pandas_datareader import data as pdr
+import plotly.express as px
+import matplotlib.pyplot as plt
+import seaborn as sns
+import yfinance as yf
+import datetime
+yf.pdr_override()
 
 start_date = "2023-01-01"
 end_date = "2023-05-01"
