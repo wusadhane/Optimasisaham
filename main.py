@@ -16,7 +16,7 @@ d = st.date_input(
 
 namasaham = st.selectbox(
     'Pilih saham',
-    ('BBRM.JK','BESS.JK','BSML.JK','BULL.JK', 'CANI.JK', 'HAIS.JK','HITS.JK','IPCC.JK', 'MITI.JK', 'NELY.JK', "PSSI.JK", "RIGS.JK", "SHIP.JK", "SMDR.JK", "SOCI.JK", "TCPI.JK", "TMAS.JK", "TPMA.JK", "WINS.JK")
+    ('BBRM.JK','BESS.JK','BSML.JK','BULL.JK', 'CANI.JK', 'HAIS.JK','HITS.JK','IPCC.JK', 'MITI.JK', 'NELY.JK', "PSSI.JK", "RIGS.JK", "SHIP.JK", "SMDR.JK", "SOCI.JK", "TCPI.JK", "TMAS.JK", "TPMA.JK", "WINS.JK"))
 
 
 
