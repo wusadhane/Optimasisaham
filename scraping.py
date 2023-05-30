@@ -3,18 +3,10 @@ import pandas as pd
 import requests
 import streamlit as st
 
-# membuat dataframe harga saham
-df = pd.Dataframe()
-
-nama_saham = []
-harga_saham = []
-
-
-
-# mendapatkan data dari web trading view bs4
-def getAllContent():
+# mendapatkan data dari web tradingview
+def getAllContent(date):
     url = (
-        "https://id.tradingview.com/markets/stocks-indonesia/sectorandindustry-sector/"
+        "https://id.tradingview.com/markets/stocks-indonesia/sectorandindustry-sector/"+date
     )
     r = requests.get(url)
     soup = BeautifulSoup(r.content, "html.parser")
@@ -22,7 +14,7 @@ def getAllContent():
         target["href"].split("/")[4].replace("-", " ")
         for target in soup.select(".tv-screener__symbol")
     ]
-  
+
 def spesificContent(target):
     url = (
         "https://www.tradingview.com/markets/stocks-indonesia/sectorandindustry-industry/marine-shipping/"
@@ -31,4 +23,3 @@ def spesificContent(target):
     r = requests.get(url)
     soup = BeautifulSoup(r.content, "html.parser")
     return [target.text for target in soup.select(".tv-screener__symbol")]
-
