@@ -14,8 +14,4 @@ d = st.date_input(
     "Tanggal Awal Optimasi",
     datetime.date(2022, 1, 1), key="start")
 
-
-dropdown = st.selectbox("Pilih Saham", key='pilih_saham')
-
-
 st.button(label="Proses", key="Proses",on_click=None)
