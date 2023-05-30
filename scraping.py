@@ -3,6 +3,14 @@ import pandas as pd
 import requests
 import streamlit as st
 
+# membuat dataframe harga saham
+df = pd.Dataframe()
+
+nama_saham = []
+harga_saham = []
+
+
+
 # mendapatkan data dari web trading view bs4
 def getAllContent():
     url = (
