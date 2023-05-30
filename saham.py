@@ -48,3 +48,4 @@ def kalkulasi(saham, biaya):
         sharpeRatio,
         harga_terbaru,
     )
+kalkulasi (1000000)
