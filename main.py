@@ -10,6 +10,10 @@ st.markdown(
 
 st.number_input("Masukan Dana Anda", key="dana")
 
-st.selectbox(label="Pilih Saham", key="pilih_saham")
+option = st.selectbox(
+    'How would you like to be contacted?',
+    ('Email', 'Home phone', 'Mobile phone'))
+
+st.write('You selected:', option)
 
 st.button(label="Proses", key="Proses",on_click=None)
