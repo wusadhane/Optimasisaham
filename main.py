@@ -10,8 +10,6 @@ st.markdown(
 
 st.number_input("Masukan Dana Anda", key="dana")
 
-dropdown = st.selectbox(
-    "Pilih Saham", key='pilih_saham')
-
+st.selectbox(label="Pilih Saham", key="pilih_saham")
 
 st.button(label="Proses", key="Proses",on_click=None)
