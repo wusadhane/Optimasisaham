@@ -2,6 +2,8 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import datetime
+from scraping import nama_saham
+
 
 # judul website
 st.title("Optimasi Portofolio Saham")
@@ -26,11 +28,7 @@ chart_data = pd.DataFrame(
 st.line_chart(chart_data)
 
 # Tabel
-df = pd.DataFrame(
-   np.random.randn(10, 5),
-   columns=('col %d' % i for i in range(5)))
-
-st.table(df)
+st.table(nama_saham)
 
 # Button proses
 st.button(label="Proses", key="Proses",on_click=None)
