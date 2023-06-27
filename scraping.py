@@ -4,9 +4,9 @@ import requests
 import streamlit as st
 
 # mendapatkan data dari web tradingview
-def getAllContent(date):
+def getAllContent():
     url = (
-        "https://id.tradingview.com/markets/stocks-indonesia/sectorandindustry-sector/"+date
+        "https://id.tradingview.com/markets/stocks-indonesia/sectorandindustry-sector/"
     )
     r = requests.get(url)
     soup = BeautifulSoup(r.content, "html.parser")
@@ -57,3 +57,18 @@ def getEmiten(subsektor):
     r = requests.get(url)
     soup = BeautifulSoup(r.content, "html.parser")
     return [target.text for target in soup.select(".tv-screener__symbol")]
+
+
+
+all_content = getAllContent()  # Get all stock names
+stock_names = []
+
+for content in all_content:
+    specific_content = spesificContent(content)
+    stock_names.extend(specific_content)
+
+# Create a DataFrame from the stock names
+df = pd.DataFrame(stock_names, columns=["Stock Name"])
+
+# Display the DataFrame
+print(df)
