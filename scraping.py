@@ -68,7 +68,7 @@ for content in all_content:
     stock_names.extend(specific_content)
 
 # Create a DataFrame from the stock names
-df = pd.DataFrame(stock_names, columns=["Stock Name"])
+nama_saham = pd.DataFrame(stock_names, columns=["Stock Name"])
 
 # Display the DataFrame
-print(df)
+# print(df)
